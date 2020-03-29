@@ -3,31 +3,7 @@
     <div class="cover">
         <!-- Navbar -->
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark pt-4">
-                <a class="navbar-brand d-block d-md-none" href="#">LOGO</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">ABOUT ME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#project">PROJECT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active d-none d-sm-block" href="#">LOGO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">SKILL</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ACHIEVEMENT</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <navbar></navbar>
         </div>
         <!-- Cover -->
         <div class="container mt-5">
@@ -49,14 +25,19 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(0, 110, 173, 0.692)" fill-opacity="1" d="M0,32L120,64C240,96,480,160,720,170.7C960,181,1200,139,1320,117.3L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
     </div>
     <div class="wave" style="z-index:33;">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,224L60,202.7C120,181,240,139,360,138.7C480,139,600,181,720,213.3C840,245,960,267,1080,250.7C1200,235,1320,181,1380,154.7L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fcfcfc" fill-opacity="1" d="M0,224L60,202.7C120,181,240,139,360,138.7C480,139,600,181,720,213.3C840,245,960,267,1080,250.7C1200,235,1320,181,1380,154.7L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
     </div>
 </section>
 </template>
 
 <script>
+import navbar from "@/components/main/navbar.vue";
+
 export default {
   name: 'cover',
+  components: {
+    navbar
+  }
 }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="navbar-tool"><navbar></navbar></div>
-        <p>achievement</p>
+        <p>project</p>
     </div>
 </template>
 
@@ -9,7 +9,7 @@
 import navbar from "@/components/main/navbar.vue";
 
 export default {
-  name: 'achievement',
+  name: 'project',
   components: {
     navbar
   }

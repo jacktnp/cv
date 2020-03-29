@@ -2,8 +2,8 @@
     <div class="container mt-5" style="z-index: 99;">
         <div class="mx-auto text-center mt-5">
             <br>
-            <p class="text-center" id="about">
-                <a href="#" class="btn wrapper btn-lg rounded-pill px-5 py-2">WHO AM I ? <br><small>(click here)</small></a>
+            <p class="text-center">
+                <router-link to="/about" class="btn wrapper btn-lg rounded-pill px-5 py-2">WHO AM I ? <br><small>(click here)</small></router-link>
             </p>
         </div>
         <div class="space"></div>

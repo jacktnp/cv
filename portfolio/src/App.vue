@@ -28,5 +28,6 @@ p, h5{
 
 #app {
   color: #2c3e50;
+  background-color: #fcfcfc;
 }
 </style>

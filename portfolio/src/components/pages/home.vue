@@ -27,4 +27,9 @@ export default {
     width: 1px;
     height: 7.5em;
 }
+
+.space2{
+    width: 1px;
+    height: 5em;
+}
 </style>
