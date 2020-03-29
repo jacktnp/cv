@@ -1,17 +1,18 @@
 <template>
     <div>
         <div class="navbar-tool"><navbar></navbar></div>
-        <p>skill</p>
+        <projects class="mt-5"></projects>
     </div>
 </template>
 
 <script>
 import navbar from "@/components/main/navbar.vue";
+import projects from "@/components/home/project.vue";
 
 export default {
   name: 'skill',
   components: {
-    navbar
+    navbar, projects
   }
 }
 </script>

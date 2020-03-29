@@ -21,15 +21,3 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-.space{
-    width: 1px;
-    height: 7.5em;
-}
-
-.space2{
-    width: 1px;
-    height: 5em;
-}
-</style>

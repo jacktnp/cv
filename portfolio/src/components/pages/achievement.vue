@@ -1,17 +1,18 @@
 <template>
     <div>
         <div class="navbar-tool"><navbar></navbar></div>
-        <p>achievement</p>
+        <achievements class="mt-5"></achievements>
     </div>
 </template>
 
 <script>
 import navbar from "@/components/main/navbar.vue";
+import achievements from "@/components/home/achievement.vue";
 
 export default {
   name: 'achievement',
   components: {
-    navbar
+    navbar, achievements
   }
 }
 </script>
