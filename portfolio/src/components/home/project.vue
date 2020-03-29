@@ -1,12 +1,5 @@
 <template>
-    <div class="container mt-5" style="z-index: 99;">
-        <div class="mx-auto text-center mt-5">
-            <br>
-            <p class="text-center" id="about">
-                <a href="#" class="btn wrapper btn-lg rounded-pill px-5 py-2">WHO AM I ? <br><small>(click here)</small></a>
-            </p>
-        </div>
-        <div class="space"></div>
+    <div class="container">
         <h1 class="text-center" id="project" style="align-items:center;"><span class="pre-h1"></span>SKILLS & PROJECT</h1>
         <div class="text-center"><small>All project based on HTML CSS and Javascript. (click to see my project.)</small></div>
         <div class="row my-5">
@@ -27,7 +20,7 @@
 
 <script>
 export default {
-    name: 'home',
+    name: 'project',
     data() {
         return{
             project: [
@@ -99,7 +92,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 .pre-h1{
     display: inline-block;
     width: 7%;
@@ -108,42 +100,4 @@ export default {
     margin-right: .75em;
     vertical-align: middle;
 }
-.space{
-    width: 1px;
-    height: 10em;
-}
-.wrapper {
-    color: #fff;
-    background-image: linear-gradient(to right, #054f7d, #00a7cf, #4800cf, #5d0391, #054f7d);
-    background-size: 600%;
-    background-position: 0 0;
-    height: 100%;
-    justify-content: center;
-    /* Animation */
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-name: gradients;
-}
-
-@keyframes gradients {
-  0% {
-    background-position: 0 0;
-  }
-  25% {
-    background-position: 50% 0;
-  }
-  50% {
-    background-position: 90% 0;
-  }
-  60% {
-    background-position: 60%;
-  }
-  75% {
-    background-position: 40%;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
 </style>

@@ -11,10 +11,10 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT ME</a>
+                            <a class="nav-link" href="#about">ABOUT ME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">PROJECT</a>
+                            <a class="nav-link" href="#project">PROJECT</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active d-none d-sm-block" href="#">LOGO</a>
@@ -31,9 +31,9 @@
         </div>
         <!-- Cover -->
         <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-6 d-none d-md-block">
-                    <img src="../assets/jacktnp.svg" class="w-50">
+            <div class="row" style="height: 55vh;">
+                <div class="col-md-6" style="display: flex !important;align-items: flex-end;">
+                    <img src="../../assets/jacktnp.svg" class="w-50 d-none d-md-block">
                 </div>
                 <div class="col-md-6">
                     <h1 class="title"><span>THANAPON</span><br><span style="font-weight: 100;">WONGPRASERT</span></h1>
@@ -64,7 +64,7 @@ export default {
 <style scoped>
 .cover{
     width: 100%;
-    height: 35rem;
+    height: 85vh;
     background: #0099ff; /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #1488cc, #2b32b2); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #1488cc, #2b32b2); /*W3C IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
@@ -93,12 +93,12 @@ export default {
 }
 .wave{
     position: absolute;
-    bottom:9em;
+    bottom: 15vh;
     width: 100%;
     transition: .25s;
 }
 
-@media screen and (max-width: 650px) {
+@media only screen and (max-width: 550px) {
     .title, .intro{
         text-align: center;
         z-index: 99;

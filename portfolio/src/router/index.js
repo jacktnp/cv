@@ -1,16 +1,17 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import home from '@/components/home'
+import home from '@/components/pages/home'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
       name: 'home',
-      component: home
+      component: home,
+      meta: { title: 'HomePage' }
     }
   ]
 })
