@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-dark py-4">
-        <a class="navbar-brand d-block d-md-none" href="#">LOGO</a>
+        <a class="navbar-brand d-block d-md-none" href="/">HOME</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -13,7 +13,7 @@
                     <router-link to="/project" :class="[currentPage.includes('project') ? activeClass : '', 'nav-link']">PROJECT</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link to="/" class="nav-link d-none d-sm-block active">LOGO</router-link>
+                    <router-link to="/" class="nav-link d-none d-sm-block active">HOME</router-link>
                 </li>
                 <li class="nav-item">
                     <router-link to="/skill" :class="[currentPage.includes('skill') ? activeClass : '', 'nav-link']">SKILL</router-link>

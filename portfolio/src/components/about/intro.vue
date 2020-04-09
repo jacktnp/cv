@@ -80,7 +80,7 @@
                         ส่วนตัวคิดว่า ตัวเองยังเป็นคนไม่เก่ง ต้องศึกษาและพัฒนาตัวเองให้มากกว่านี้ !
                     </p>
                 </div>
-                <div class="contact mt-5">
+                <div class="contact my-5">
                     <h3 class="intro-subhead">#CONTACT</h3>
                     <p><b-icon-phone></b-icon-phone> Phone : 089-739-5107</p>
                     <p><b-icon-envelope></b-icon-envelope> Email : thanaponpkw@gmail.com</p>
@@ -92,6 +92,9 @@
                         <a href="https://github.com/jacktnp">Github</a>
                     </p>
                 </div>
+                <p class="mx-auto text-center my-5">
+                    <a href="https://drive.google.com/file/d/1QTT3TMu0wM_hseWx0KCq8FpcZHCcT4sw/view?usp=sharing" class="btn btn-outline-primary" target="_blank">TRANSCRIPT</a>
+                </p>
             </div>
         </div>
     </div>
