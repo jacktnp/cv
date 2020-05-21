@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="text-center profile-img mb-5">  
-                    <b-img src="https://i.imgur.com/1dziWSV.jpg" class="w-100" rounded="circle" style="border: 5px solid transparent"></b-img>
+                    <b-img :src="require(`@/assets/profile.jpg`)" class="w-100" rounded="circle" style="border: 5px solid transparent"></b-img>
                 </div>
             </div>
             <div class="col-md-1"></div>
