@@ -6,71 +6,42 @@
         <div class="row">
             <div class="col-md-6">
                 <h2 class="text-right" style="align-items:center;">REWARD <span class="last-h1"></span></h2>
-                <b-carousel 
-                    id="reward"
-                    v-model="slide"
-                    :interval="4000"
-                    controls
-                    indicators
-                    background="#ababab"
-                    img-width="1024"
-                    img-height="480"
-                    style="text-shadow: 1px 1px 2px #333;"
-                    @sliding-start="onSlideStart"
-                    @sliding-end="onSlideEnd"
-                >
-                    <!-- Slides with custom text -->
-                    <b-carousel-slide img-src="https://i.imgur.com/ozPwx5j.jpg">
-                        <h5 class="carousel-text1">Parliament Hackathon : Participation Platform 2019</h5>
-                    </b-carousel-slide>
-                    <!-- Slides with custom text -->
-                </b-carousel>
+                <swiper title="test1" :banners="swip1.banners"></swiper>
             </div>
             <div class="col-md-6">
                 <div class="space"></div>
                 <h2 class="text-left" style="align-items:center;"><span class="pre-h1"></span> SCHOLARSHIP</h2>
-                <b-carousel 
-                    id="scholarship"
-                    v-model="slide"
-                    :interval="3000"
-                    controls
-                    indicators
-                    background="#ababab"
-                    img-width="1024"
-                    img-height="480"
-                    style="text-shadow: 1px 1px 2px #333;"
-                    @sliding-start="onSlideStart"
-                    @sliding-end="onSlideEnd"
-                >
-                    <!-- Slides with custom text -->
-                    <b-carousel-slide img-src="https://i.imgur.com/PLtAZxH.jpg">
-                        <h5 class="carousel-text2">Achieve The Depa Conceptual Fund</h5>
-                    </b-carousel-slide>
-                    <!-- Slides with custom text -->
-                </b-carousel>
+                <swiper title="test2" :banners="swip2.banners"></swiper>
             </div>
         </div>
     </div>
 </template>
-
+ 
 <script>
+import swiper from "@/components/swiperjs/swiper.vue";
+
 export default {
-    data() {
-        return {
-            slide: 0,
-            sliding: null
-        }
+    components: {
+        swiper
     },
-    methods: {
-        onSlideStart(slide) {
-            this.sliding = true
-        },
-        onSlideEnd(slide) {
-            this.sliding = false
-        }
+    data(){
+        return{
+            swip1: {
+                title: 'My Journey with Vue',
+                banners: [
+                    "https://i.imgur.com/ozPwx5j.jpg"
+                ]
+            },
+            swip2: {
+                title: 'My Journey with Vue2',
+                banners: [
+                    "https://i.imgur.com/PLtAZxH.jpg"
+                ]
+            }
+        }  
     }
 }
-</script>
+</script> 
 
 <style scoped>
 .pre-h1{

@@ -5,7 +5,7 @@
         <div class="row my-5">
             <div v-for="(i, index) in project" :key="index" class="col-md-3 d-flex align-items-stretch mb-4">
                 <div class="card">
-                    <a :href="i.link" target="_blank"><img class="card-img-top" :src="i.img"></a>
+                    <a :href="i.link" target="_blank"><img class="card-img-top" :src="require(`@/assets/project/${i.img}`)"></a>
                     <div class="card-body text-center">
                         <h5 class="card-title" v-html="i.name"></h5>
                     </div>
@@ -27,65 +27,82 @@ export default {
             project: [
                 {
                     name: "JO!NTY",
-                    img: "https://i.imgur.com/HlYwOES.jpg",
+                    img: "jointy.jpg",
                     link: "#",
                     framework: ['Bootstrap', 'PHP', 'MySQL']
                 },
                 {
                     name: "Nakhonpratom Travel",
-                    img: "https://i.imgur.com/FqcIOh1.jpg",
-                    link: "#",
+                    img: "nakhon.jpg",
+                    link: "https://jacktnp.github.io/multi/",
                     framework: ['Bootstrap']
                 },
                 {
                     name: "Loofer",
-                    img: "https://i.imgur.com/n3zWcSJ.png",
+                    img: "loofer.png",
                     link: "#",
                     framework: ['Bootstrap', 'Firebase']
                 },
                 {
                     name: "สันติ หนังคลาสสิค",
-                    img: "https://i.imgur.com/1P6KUoK.jpg",
-                    link: "#",
+                    img: "santi.jpg",
+                    link: "https://base.jacktnp.com/arch/",
                     framework: ['Bootstrap']
                 },
                 {
                     name: "Graphico",
-                    img: "https://i.imgur.com/CQLyv8O.png",
-                    link: "#",
+                    img: "graphico.png",
+                    link: "https://base.jacktnp.com/graphico/",
                     framework: ['-']
                 },
                 {
                     name: "Dormlab",
-                    img: "https://i.imgur.com/nLUqkr7.png",
+                    img: "dormlab.png",
                     link: "#",
                     framework: ['Bootstrap', 'Django (Python)']
                 },
                 {
                     name: "SmoIT <small>@ITKMITL</small>",
-                    img: "https://i.imgur.com/U5Kx1vM.png",
+                    img: "smoit.png",
                     link: "https://smo.it.kmitl.ac.th/",
                     framework: ['Wordpress']
                 },
                 {
                     name: "ITFreshy2019 <br><small>(Mobile First)</small>",
-                    img: "https://i.imgur.com/wh9JXYv.png",
+                    img: "itfreshy.png",
                     link: "#",
                     framework: ['Bootstrap', 'Firebase', 'Vuejs']
                 },
                 {
                     name: "Cineario",
-                    img: "https://i.imgur.com/pH06eoC.jpg",
+                    img: "cineario.jpg",
                     link: "https://tintinap.github.io/Cineario/",
                     framework: ['Bootstrap', 'Vuejs']
                 },
                 {
                     name: "EECi",
-                    img: "https://i.imgur.com/4ySNKva.png",
-                    link: "#",
+                    img: "eeci.png",
+                    link: "https://jacktnp.github.io/eeci/",
                     framework: ['Bootstrap']
                 },
+                {
+                    name: "ITGadgetMuseum <small>(Front-end)</small>",
+                    img: "ggmuseum-frontend.png",
+                    link: "https://gadgetmuseum.it.kmitl.ac.th/",
+                    framework: ['Vue.js', 'Bootstrap']
+                },
+                {
+                    name: "ITGadgetMuseum<br> <small>(UI for Back-end)</small>",
+                    img: "ggmuseum-backend.png",
+                    link: "https://projectbase01.herokuapp.com/admin/users/login",
+                    framework: ['Node.js', 'Express.js', 'Bootstrap']
+                },
             ]
+        }
+    },
+    methods:{
+        getImgUrl(img) {
+            return require('@/assets/project/' + img)
         }
     }
 }
