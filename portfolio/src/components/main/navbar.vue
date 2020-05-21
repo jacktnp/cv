@@ -47,7 +47,6 @@ export default {
 .nav-link{
     /* color: #fff !important; */
     margin: 0em .35em;
-    font-weight: 600;
     border-radius: .3em;
     transition: .5s;
     text-align: center;
@@ -55,6 +54,7 @@ export default {
 .nav-link:hover, .nav-link.active{
     background: rgba(255, 255, 255, 0.911);
     color: #1488cc !important;
+    font-weight: 600;
     transform: scale(1.05);
 }
 </style>
